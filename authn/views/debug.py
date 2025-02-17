@@ -53,6 +53,7 @@ def debug_random_login(request):
         slug=slug,
         defaults=dict(
             patreon_id=random_string(),
+            telegram_id="123",
             membership_platform_type=User.MEMBERSHIP_PLATFORM_PATREON,
             email=slug + "@random.dev",
             full_name="%s %d y.o. Developer" % (random.choice(["Максим", "Олег"]), random.randint(18, 101)),
